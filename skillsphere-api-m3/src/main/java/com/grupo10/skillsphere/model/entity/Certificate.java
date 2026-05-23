@@ -2,7 +2,6 @@ package com.grupo10.skillsphere.model.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
-import java.time.LocalDate;
 
 @Entity
 @Data
@@ -15,8 +14,7 @@ public class Certificate {
 
     private String name;
     private String description;
-    private LocalDate issueDate;
-    private LocalDate expiryDate;
+    private Integer year; // Reemplaza las fechas complicadas por el año (AAAA)
 
     @ManyToOne
     @JoinColumn(name = "student_id")

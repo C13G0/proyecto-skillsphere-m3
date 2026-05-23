@@ -44,8 +44,7 @@ public class CertificateService {
         return repository.findById(id).map(existing -> {
             existing.setName(certificateDetails.getName());
             existing.setDescription(certificateDetails.getDescription());
-            existing.setIssueDate(certificateDetails.getIssueDate());
-            existing.setExpiryDate(certificateDetails.getExpiryDate());
+            existing.setYear(certificateDetails.getYear()); // Mapeo del nuevo campo año entero
             if (certificateDetails.getStudentId() != null) {
                 existing.setStudent(studentRepository.getReferenceById(certificateDetails.getStudentId()));
             }
@@ -67,8 +66,7 @@ public class CertificateService {
         dto.setId(entity.getId());
         dto.setName(entity.getName());
         dto.setDescription(entity.getDescription());
-        dto.setIssueDate(entity.getIssueDate());
-        dto.setExpiryDate(entity.getExpiryDate());
+        dto.setYear(entity.getYear()); // Conversión a DTO con el año simplificado
         if (entity.getStudent() != null) {
             dto.setStudentId(entity.getStudent().getId());
         }
@@ -83,8 +81,7 @@ public class CertificateService {
         entity.setId(dto.getId());
         entity.setName(dto.getName());
         entity.setDescription(dto.getDescription());
-        entity.setIssueDate(dto.getIssueDate());
-        entity.setExpiryDate(dto.getExpiryDate());
+        entity.setYear(dto.getYear()); // Conversión a Entidad con el año simplificado
         if (dto.getStudentId() != null) {
             entity.setStudent(studentRepository.getReferenceById(dto.getStudentId()));
         }

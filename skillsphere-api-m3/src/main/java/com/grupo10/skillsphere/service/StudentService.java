@@ -36,7 +36,7 @@ public class StudentService {
             existing.setLastName(studentDetails.getLastName());
             existing.setEmail(studentDetails.getEmail());
             existing.setPhone(studentDetails.getPhone());
-            existing.setBirthDate(studentDetails.getBirthDate());
+            // Se eliminó: existing.setBirthDate(studentDetails.getBirthDate());
             existing.setProgram(studentDetails.getProgram());
             Student updated = repository.save(existing);
             return convertToDTO(updated);
@@ -54,7 +54,7 @@ public class StudentService {
         dto.setLastName(entity.getLastName());
         dto.setEmail(entity.getEmail());
         dto.setPhone(entity.getPhone());
-        dto.setBirthDate(entity.getBirthDate());
+        // Se eliminó: dto.setBirthDate(entity.getBirthDate());
         dto.setProgram(entity.getProgram());
         return dto;
     }
@@ -66,7 +66,7 @@ public class StudentService {
         entity.setLastName(dto.getLastName());
         entity.setEmail(dto.getEmail());
         entity.setPhone(dto.getPhone());
-        entity.setBirthDate(dto.getBirthDate());
+        // Se eliminó: entity.setBirthDate(dto.getBirthDate());
         entity.setProgram(dto.getProgram());
         return entity;
     }

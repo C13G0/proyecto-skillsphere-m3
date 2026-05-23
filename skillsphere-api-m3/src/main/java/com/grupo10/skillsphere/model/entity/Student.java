@@ -2,7 +2,6 @@ package com.grupo10.skillsphere.model.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
-import java.time.LocalDate;
 
 @Entity
 @Data
@@ -17,7 +16,6 @@ public class Student {
     private String lastName;
     private String email;
     private String phone;
-    private LocalDate birthDate;
     private String program;
 
     @Embedded
