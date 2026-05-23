@@ -1,0 +1,11 @@
+node_modules/
+target/
+.env
+__pycache__/
+*.class
+*.jar
+*.war
+*.iml
+.idea/
+.vscode/
+*.pyc

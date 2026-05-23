@@ -1,0 +1,8 @@
+target/
+.mvn/
+*.md
+.gitignore
+.gitattributes
+.env
+.env.example
+error.log

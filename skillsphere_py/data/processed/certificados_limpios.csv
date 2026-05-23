@@ -1,0 +1,98 @@
+id_certificado,id_estudiante,nombre_curso,institucion,fecha,estado,duracion_horas
+C-001,1,python básico,coursera,2024-01-15,completado,40.0
+C-002,2,adobe illustrator,udemy,2024-02-10,completado,30.0
+C-003,3,react avanzado,platzi,2024-01-20,completado,60.0
+C-004,4,excel empresarial,coursera,2024-03-05,completado,20.0
+C-005,5,django rest,udemy,2024-02-25,completado,50.0
+C-006,1,javascript,platzi,2024-03-10,completado,45.0
+C-007,2,photoshop,coursera,2024-01-30,completado,35.0
+C-008,3,node.js,udemy,2024-04-01,en progreso,55.0
+C-009,4,power bi,platzi,2024-02-15,completado,25.0
+C-010,5,fastapi,coursera,2024-03-20,en progreso,60.0
+C-011,6,figma,udemy,2024-01-10,completado,30.0
+C-012,7,contabilidad,platzi,2024-02-05,completado,20.0
+C-013,8,vue.js,coursera,2024-03-15,completado,50.0
+C-014,9,after effects,udemy,2024-01-25,completado,40.0
+C-015,10,gestión de proyectos,platzi,2024-04-10,en progreso,35.0
+C-016,11,machine learning,coursera,2024-02-20,completado,80.0
+C-017,12,indesign,udemy,2024-03-25,completado,30.0
+C-018,13,marketing digital,platzi,2024-01-15,completado,25.0
+C-019,14,typescript,coursera,2024-04-05,en progreso,45.0
+C-020,15,premiere pro,udemy,2024-02-10,completado,35.0
+C-021,16,finanzas,platzi,2024-03-01,completado,20.0
+C-022,17,docker,coursera,2024-01-20,completado,55.0
+C-023,18,blender,udemy,2024-04-15,en progreso,60.0
+C-024,19,recursos humanos,platzi,2024-02-25,completado,25.0
+C-025,20,angular,coursera,2024-03-10,completado,50.0
+C-026,1,sql avanzado,udemy,2024-01-05,completado,40.0
+C-027,2,illustrator avanzado,platzi,2024-02-15,completado,35.0
+C-028,3,python data science,coursera,2024-03-20,completado,70.0
+C-029,4,sap básico,udemy,2024-01-30,completado,30.0
+C-030,5,aws cloud,platzi,2024-04-01,en progreso,65.0
+C-031,6,ux design,coursera,2024-02-05,completado,40.0
+C-032,7,nómina,udemy,2024-03-15,completado,20.0
+C-033,8,spring boot,platzi,2024-01-25,completado,60.0
+C-034,9,motion graphics,coursera,2024-04-10,en progreso,45.0
+C-035,10,lean six sigma,udemy,2024-02-20,completado,35.0
+C-036,11,sketch,platzi,2024-03-25,completado,30.0
+C-037,12,canva pro,coursera,2024-01-10,completado,15.0
+C-038,13,logística,udemy,2024-02-05,completado,25.0
+C-039,14,react native,platzi,2024-03-01,en progreso,55.0
+C-040,15,cinema 4d,coursera,2024-01-20,completado,50.0
+C-041,16,contabilidad avanzada,udemy,2024-04-05,completado,30.0
+C-042,17,kubernetes,platzi,2024-02-25,en progreso,70.0
+C-043,18,solidworks,coursera,2024-03-10,completado,45.0
+C-044,19,power apps,udemy,2024-01-30,completado,35.0
+C-045,20,flutter,platzi,2024-04-15,en progreso,60.0
+C-046,21,python básico,coursera,2024-02-10,completado,40.0
+C-047,22,excel avanzado,udemy,2024-03-20,completado,25.0
+C-048,23,kotlin,platzi,2024-01-15,completado,55.0
+C-049,24,autocad,coursera,2024-04-01,en progreso,50.0
+C-050,25,crm salesforce,udemy,2024-02-20,completado,30.0
+C-051,26,tensorflow,platzi,2024-03-25,completado,75.0
+C-052,27,procreate,coursera,2024-01-10,completado,25.0
+C-053,28,tableau,udemy,2024-02-05,en progreso,40.0
+C-054,29,swift,platzi,2024-03-01,completado,60.0
+C-055,30,revit,coursera,2024-01-25,completado,45.0
+C-056,1,power bi avanzado,udemy,2024-04-10,en progreso,35.0
+C-057,2,xd adobe,platzi,2024-02-15,completado,30.0
+C-058,3,java avanzado,coursera,2024-03-20,completado,65.0
+C-059,4,erp oracle,udemy,2024-01-05,completado,40.0
+C-060,5,gcp cloud,platzi,2024-04-15,en progreso,70.0
+C-062,7,nómina avanzada,udemy,,completado,25.0
+C-063,8,graphql,,2024-03-15,en progreso,50.0
+C-064,9,animación 2d,platzi,2024-01-20,,45.0
+C-065,10,itil,coursera,2024-04-05,completado,
+C-066,11,wireframing,udemy,2024-02-25,completado,30.0
+C-068,13,cadena de suministro,coursera,2024-01-30,,35.0
+C-069,14,react testing,udemy,2024-04-15,en progreso,
+C-070,15,zbrush,,2024-02-05,completado,55.0
+C-071,16,niif,platzi,2024-03-20,completado,30.0
+C-072,17,terraform,coursera,,en progreso,65.0
+C-073,18,rhinoceros,udemy,2024-01-10,,40.0
+C-074,19,azure devops,platzi,2024-04-01,completado,50.0
+C-075,20,ionic,coursera,2024-02-20,completado,45.0
+C-077,22,access,platzi,2024-01-15,completado,20.0
+C-078,23,go lang,coursera,2024-04-10,en progreso,60.0
+C-079,24,sketchup,udemy,2024-02-10,,50.0
+C-080,25,erp sap avanzado,platzi,2024-03-01,completado,40.0
+C-081,26,nlp python,coursera,2024-01-25,completado,70.0
+C-082,27,lightroom,udemy,2024-04-05,completado,25.0
+C-083,28,qlik sense,,2024-02-20,en progreso,45.0
+C-084,29,rust,platzi,2024-03-15,completado,65.0
+C-085,30,archicad,coursera,2024-01-05,,55.0
+C-086,31,python básico,udemy,2024-04-10,completado,40.0
+C-087,32,photoshop avanzado,platzi,2024-02-25,completado,35.0
+C-088,33,microservicios,coursera,2024-03-20,en progreso,70.0
+C-089,34,contabilidad digital,udemy,2024-01-20,completado,25.0
+C-090,35,azure ml,platzi,2024-04-15,en progreso,75.0
+C-091,36,illustrator cc,coursera,2024-02-10,completado,30.0
+C-092,37,gestión del cambio,udemy,2024-03-25,completado,20.0
+C-093,38,svelte,platzi,2024-01-30,completado,50.0
+C-094,39,davinci resolve,coursera,2024-04-05,en progreso,45.0
+C-095,40,iso 9001,udemy,2024-02-20,completado,30.0
+C-096,41,deep learning,platzi,2024-03-10,en progreso,80.0
+C-097,42,coreldraw,coursera,2024-01-15,completado,25.0
+C-098,43,auditoría,udemy,2024-04-01,completado,35.0
+C-099,44,next.js,platzi,2024-02-25,completado,55.0
+C-100,45,maya 3d,coursera,2024-03-20,en progreso,60.0

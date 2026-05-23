@@ -1,0 +1,101 @@
+id_certificado,id_estudiante,nombre_curso,institucion,fecha,estado,duracion_horas
+C-001,1,Python Básico,Coursera,2024-01-15,Completado,40
+C-002,2,Adobe Illustrator,Udemy,2024-02-10,Completado,30
+C-003,3,React Avanzado,Platzi,2024-01-20,Completado,60
+C-004,4,Excel Empresarial,Coursera,2024-03-05,Completado,20
+C-005,5,Django REST,Udemy,2024-02-25,Completado,50
+C-006,1,JavaScript,Platzi,2024-03-10,Completado,45
+C-007,2,Photoshop,Coursera,2024-01-30,Completado,35
+C-008,3,Node.js,Udemy,2024-04-01,En Progreso,55
+C-009,4,Power BI,Platzi,2024-02-15,Completado,25
+C-010,5,FastAPI,Coursera,2024-03-20,En Progreso,60
+C-011,6,Figma,Udemy,2024-01-10,Completado,30
+C-012,7,Contabilidad,Platzi,2024-02-05,Completado,20
+C-013,8,Vue.js,Coursera,2024-03-15,Completado,50
+C-014,9,After Effects,Udemy,2024-01-25,Completado,40
+C-015,10,Gestión de Proyectos,Platzi,2024-04-10,En Progreso,35
+C-016,11,Machine Learning,Coursera,2024-02-20,Completado,80
+C-017,12,InDesign,Udemy,2024-03-25,Completado,30
+C-018,13,Marketing Digital,Platzi,2024-01-15,Completado,25
+C-019,14,TypeScript,Coursera,2024-04-05,En Progreso,45
+C-020,15,Premiere Pro,Udemy,2024-02-10,Completado,35
+C-021,16,Finanzas,Platzi,2024-03-01,Completado,20
+C-022,17,Docker,Coursera,2024-01-20,Completado,55
+C-023,18,Blender,Udemy,2024-04-15,En Progreso,60
+C-024,19,Recursos Humanos,Platzi,2024-02-25,Completado,25
+C-025,20,Angular,Coursera,2024-03-10,Completado,50
+C-026,1,SQL Avanzado,Udemy,2024-01-05,Completado,40
+C-027,2,Illustrator Avanzado,Platzi,2024-02-15,Completado,35
+C-028,3,Python Data Science,Coursera,2024-03-20,Completado,70
+C-029,4,SAP Básico,Udemy,2024-01-30,Completado,30
+C-030,5,AWS Cloud,Platzi,2024-04-01,En Progreso,65
+C-031,6,UX Design,Coursera,2024-02-05,Completado,40
+C-032,7,Nómina,Udemy,2024-03-15,Completado,20
+C-033,8,Spring Boot,Platzi,2024-01-25,Completado,60
+C-034,9,Motion Graphics,Coursera,2024-04-10,En Progreso,45
+C-035,10,Lean Six Sigma,Udemy,2024-02-20,Completado,35
+C-036,11,Sketch,Platzi,2024-03-25,Completado,30
+C-037,12,Canva Pro,Coursera,2024-01-10,Completado,15
+C-038,13,Logística,Udemy,2024-02-05,Completado,25
+C-039,14,React Native,Platzi,2024-03-01,En Progreso,55
+C-040,15,Cinema 4D,Coursera,2024-01-20,Completado,50
+C-041,16,Contabilidad Avanzada,Udemy,2024-04-05,Completado,30
+C-042,17,Kubernetes,Platzi,2024-02-25,En Progreso,70
+C-043,18,Solidworks,Coursera,2024-03-10,Completado,45
+C-044,19,Power Apps,Udemy,2024-01-30,Completado,35
+C-045,20,Flutter,Platzi,2024-04-15,En Progreso,60
+C-046,21,Python Básico,Coursera,2024-02-10,Completado,40
+C-047,22,Excel Avanzado,Udemy,2024-03-20,Completado,25
+C-048,23,Kotlin,Platzi,2024-01-15,Completado,55
+C-049,24,AutoCAD,Coursera,2024-04-01,En Progreso,50
+C-050,25,CRM Salesforce,Udemy,2024-02-20,Completado,30
+C-051,26,TensorFlow,Platzi,2024-03-25,Completado,75
+C-052,27,Procreate,Coursera,2024-01-10,Completado,25
+C-053,28,Tableau,Udemy,2024-02-05,En Progreso,40
+C-054,29,Swift,Platzi,2024-03-01,Completado,60
+C-055,30,Revit,Coursera,2024-01-25,Completado,45
+C-056,1,Power BI Avanzado,Udemy,2024-04-10,En Progreso,35
+C-057,2,XD Adobe,Platzi,2024-02-15,Completado,30
+C-058,3,Java Avanzado,Coursera,2024-03-20,Completado,65
+C-059,4,ERP Oracle,Udemy,2024-01-05,Completado,40
+C-060,5,GCP Cloud,Platzi,2024-04-15,En Progreso,70
+C-061,6,,Coursera,2024-02-10,Completado,35
+C-062,7,Nómina Avanzada,Udemy,,Completado,25
+C-063,8,GraphQL,,2024-03-15,En Progreso,50
+C-064,9,Animación 2D,Platzi,2024-01-20,,45
+C-065,10,ITIL,Coursera,2024-04-05,Completado,
+C-066,11,Wireframing,Udemy,2024-02-25,Completado,30
+C-067,12,,Platzi,2024-03-10,Completado,20
+C-068,13,Cadena de Suministro,Coursera,2024-01-30,,35
+C-069,14,React Testing,Udemy,2024-04-15,En Progreso,
+C-070,15,ZBrush,,2024-02-05,Completado,55
+C-071,16,NIIF,Platzi,2024-03-20,Completado,30
+C-072,17,Terraform,Coursera,,En Progreso,65
+C-073,18,Rhinoceros,Udemy,2024-01-10,,40
+C-074,19,Azure DevOps,Platzi,2024-04-01,Completado,50
+C-075,20,Ionic,Coursera,2024-02-20,Completado,45
+C-076,21,,Udemy,2024-03-25,Completado,35
+C-077,22,Access,Platzi,2024-01-15,Completado,20
+C-078,23,Go Lang,Coursera,2024-04-10,En Progreso,60
+C-079,24,SketchUp,Udemy,2024-02-10,,50
+C-080,25,ERP SAP Avanzado,Platzi,2024-03-01,Completado,40
+C-081,26,NLP Python,Coursera,2024-01-25,Completado,70
+C-082,27,Lightroom,Udemy,2024-04-05,Completado,25
+C-083,28,Qlik Sense,,2024-02-20,En Progreso,45
+C-084,29,Rust,Platzi,2024-03-15,Completado,65
+C-085,30,ArchiCAD,Coursera,2024-01-05,,55
+C-086,31,Python Básico,Udemy,2024-04-10,Completado,40
+C-087,32,Photoshop Avanzado,Platzi,2024-02-25,Completado,35
+C-088,33,Microservicios,Coursera,2024-03-20,En Progreso,70
+C-089,34,Contabilidad Digital,Udemy,2024-01-20,Completado,25
+C-090,35,Azure ML,Platzi,2024-04-15,En Progreso,75
+C-091,36,Illustrator CC,Coursera,2024-02-10,Completado,30
+C-092,37,Gestión del Cambio,Udemy,2024-03-25,Completado,20
+C-093,38,Svelte,Platzi,2024-01-30,Completado,50
+C-094,39,DaVinci Resolve,Coursera,2024-04-05,En Progreso,45
+C-095,40,ISO 9001,Udemy,2024-02-20,Completado,30
+C-096,41,Deep Learning,Platzi,2024-03-10,En Progreso,80
+C-097,42,CorelDraw,Coursera,2024-01-15,Completado,25
+C-098,43,Auditoría,Udemy,2024-04-01,Completado,35
+C-099,44,Next.js,Platzi,2024-02-25,Completado,55
+C-100,45,Maya 3D,Coursera,2024-03-20,En Progreso,60

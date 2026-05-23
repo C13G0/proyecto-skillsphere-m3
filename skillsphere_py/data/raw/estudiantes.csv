@@ -1,0 +1,101 @@
+id_estudiante,nombre,programa,ciudad,semestre,promedio
+1,Laura García,Desarrollo de Software,Medellín,3,4.2
+2,Andrés Pérez,Diseño Gráfico,Bogotá,5,3.8
+3,Valentina Torres,Desarrollo de Software,Cali,2,4.5
+4,Carlos Ramírez,Administración,Medellín,6,3.1
+5,María López,Desarrollo de Software,Bogotá,1,4.8
+6,Juan Martínez,Diseño Gráfico,Medellín,4,3.5
+7,Sofía Hernández,Administración,Cali,3,4.0
+8,Diego Gómez,Desarrollo de Software,Bogotá,5,3.7
+9,Isabella Díaz,Diseño Gráfico,Medellín,2,4.3
+10,Santiago Morales,Administración,Cali,6,3.9
+11,Camila Ruiz,Desarrollo de Software,Bogotá,1,4.6
+12,Mateo Vargas,Diseño Gráfico,Medellín,4,3.2
+13,Daniela Castro,Administración,Cali,3,4.1
+14,Sebastián Ortiz,Desarrollo de Software,Bogotá,5,3.6
+15,Valeria Ramos,Diseño Gráfico,Medellín,2,4.4
+16,Alejandro Cruz,Administración,Cali,6,3.8
+17,Natalia Reyes,Desarrollo de Software,Bogotá,1,4.7
+18,Felipe Mendoza,Diseño Gráfico,Medellín,4,3.3
+19,Paula Jiménez,Administración,Cali,3,4.2
+20,Tomás Guerrero,Desarrollo de Software,Bogotá,5,3.5
+21,Ana Medina,Diseño Gráfico,Medellín,2,4.5
+22,Luis Herrera,Administración,Cali,6,3.7
+23,Sara Suárez,Desarrollo de Software,Bogotá,1,4.9
+24,Esteban Pardo,Diseño Gráfico,Medellín,4,3.4
+25,Carolina Aguilar,Administración,Cali,3,4.0
+26,Ricardo Blanco,Desarrollo de Software,Bogotá,5,3.8
+27,Mariana Vega,Diseño Gráfico,Medellín,2,4.2
+28,Julián Ríos,Administración,Cali,6,3.6
+29,Luciana Molina,Desarrollo de Software,Bogotá,1,4.7
+30,Andrés Soto,Diseño Gráfico,Medellín,4,3.1
+31,Victoria Cárdenas,Administración,Cali,3,4.3
+32,Nicolás Fuentes,Desarrollo de Software,Bogotá,5,3.9
+33,Gabriela Mora,Diseño Gráfico,Medellín,2,4.6
+34,Emilio Peña,Administración,Cali,6,3.5
+35,Renata Delgado,Desarrollo de Software,Bogotá,1,4.8
+36,Sergio Ibáñez,Diseño Gráfico,Medellín,4,3.2
+37,Ximena Cabrera,Administración,Cali,3,4.1
+38,Pablo Espinoza,Desarrollo de Software,Bogotá,5,3.7
+39,Alejandra Navarro,Diseño Gráfico,Medellín,2,4.4
+40,Fernando Paredes,Administración,Cali,6,3.8
+41,Melissa Zamora,Desarrollo de Software,Bogotá,1,4.5
+42,Gustavo Salinas,Diseño Gráfico,Medellín,4,3.3
+43,Patricia Vera,Administración,Cali,3,4.2
+44,Eduardo Pizarro,Desarrollo de Software,Bogotá,5,3.6
+45,Claudia Montes,Diseño Gráfico,Medellín,2,4.3
+46,Roberto Guerrero,Administración,Cali,6,3.9
+47,Adriana Lozano,Desarrollo de Software,Bogotá,1,4.7
+48,Héctor Vargas,Diseño Gráfico,Medellín,4,3.4
+49,Mónica Ríos,Administración,Cali,3,4.0
+50,Javier Mora,Desarrollo de Software,Bogotá,5,3.8
+51,  laura garcía ,desarrollo de software,medellín,3,4.2
+52,ANDRÉS PÉREZ,DISEÑO GRÁFICO,BOGOTÁ,5,3.8
+53,Valentina Torres,,Cali,2,4.5
+54,Carlos Ramírez,Administración,,6,3.1
+55,María López,Desarrollo de Software,Bogotá,,4.8
+56,Juan Martínez,Diseño Gráfico,Medellín,4,
+57,,Administración,Cali,3,4.0
+58,Diego Gómez,Desarrollo de Software,,5,3.7
+59,Isabella Díaz,,Medellín,2,4.3
+60,Santiago Morales,Administración,Cali,6,
+61,Camila Ruiz,Desarrollo de Software,Bogotá,1,4.6
+62,Mateo Vargas,Diseño Gráfico,Medellín,,3.2
+63,Daniela Castro,Administración,Cali,3,4.1
+64,Sebastián Ortiz,Desarrollo de Software,Bogotá,5,3.6
+65,Valeria Ramos,Diseño Gráfico,,2,4.4
+66,Alejandro Cruz,Administración,Cali,6,3.8
+67,Natalia Reyes,Desarrollo de Software,Bogotá,1,4.7
+68,Felipe Mendoza,,Medellín,4,3.3
+69,Paula Jiménez,Administración,Cali,3,4.2
+70,Tomás Guerrero,Desarrollo de Software,Bogotá,5,3.5
+71,Ana Medina,Diseño Gráfico,Medellín,2,4.5
+72,Luis Herrera,Administración,Cali,,3.7
+73,Sara Suárez,Desarrollo de Software,Bogotá,1,4.9
+74,Esteban Pardo,Diseño Gráfico,Medellín,4,3.4
+75,Carolina Aguilar,,Cali,3,4.0
+76,Ricardo Blanco,Desarrollo de Software,Bogotá,5,3.8
+77,  Mariana Vega  ,Diseño Gráfico,Medellín,2,4.2
+78,Julián Ríos,Administración,Cali,6,3.6
+79,Luciana Molina,Desarrollo de Software,,1,4.7
+80,Andrés Soto,DISEÑO GRÁFICO,Medellín,4,3.1
+81,Victoria Cárdenas,Administración,Cali,3,4.3
+82,Nicolás Fuentes,Desarrollo de Software,Bogotá,,3.9
+83,Gabriela Mora,Diseño Gráfico,Medellín,2,4.6
+84,Emilio Peña,Administración,Cali,6,3.5
+85,Renata Delgado,Desarrollo de Software,Bogotá,1,4.8
+86,Sergio Ibáñez,Diseño Gráfico,,4,3.2
+87,Ximena Cabrera,Administración,Cali,3,4.1
+88,Pablo Espinoza,Desarrollo de Software,Bogotá,5,3.7
+89,Alejandra Navarro,Diseño Gráfico,Medellín,2,4.4
+90,Fernando Paredes,Administración,,6,3.8
+91,Melissa Zamora,Desarrollo de Software,Bogotá,1,4.5
+92,Gustavo Salinas,DISEÑO GRÁFICO,Medellín,4,3.3
+93,Patricia Vera,Administración,Cali,3,4.2
+94,Eduardo Pizarro,Desarrollo de Software,Bogotá,5,3.6
+95,Claudia Montes,Diseño Gráfico,Medellín,2,4.3
+96,Roberto Guerrero,Administración,,6,3.9
+97,Adriana Lozano,Desarrollo de Software,Bogotá,1,4.7
+98,Héctor Vargas,Diseño Gráfico,Medellín,4,3.4
+99,Mónica Ríos,,Cali,3,4.0
+100,Javier Mora,Desarrollo de Software,Bogotá,5,3.8

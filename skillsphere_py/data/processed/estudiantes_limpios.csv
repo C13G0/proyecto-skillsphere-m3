@@ -1,0 +1,100 @@
+id_estudiante,nombre,programa,ciudad,semestre,promedio
+1,laura garcía,desarrollo de software,medellín,3.0,4.2
+2,andrés pérez,diseño gráfico,bogotá,5.0,3.8
+3,valentina torres,desarrollo de software,cali,2.0,4.5
+4,carlos ramírez,administración,medellín,6.0,3.1
+5,maría lópez,desarrollo de software,bogotá,1.0,4.8
+6,juan martínez,diseño gráfico,medellín,4.0,3.5
+7,sofía hernández,administración,cali,3.0,4.0
+8,diego gómez,desarrollo de software,bogotá,5.0,3.7
+9,isabella díaz,diseño gráfico,medellín,2.0,4.3
+10,santiago morales,administración,cali,6.0,3.9
+11,camila ruiz,desarrollo de software,bogotá,1.0,4.6
+12,mateo vargas,diseño gráfico,medellín,4.0,3.2
+13,daniela castro,administración,cali,3.0,4.1
+14,sebastián ortiz,desarrollo de software,bogotá,5.0,3.6
+15,valeria ramos,diseño gráfico,medellín,2.0,4.4
+16,alejandro cruz,administración,cali,6.0,3.8
+17,natalia reyes,desarrollo de software,bogotá,1.0,4.7
+18,felipe mendoza,diseño gráfico,medellín,4.0,3.3
+19,paula jiménez,administración,cali,3.0,4.2
+20,tomás guerrero,desarrollo de software,bogotá,5.0,3.5
+21,ana medina,diseño gráfico,medellín,2.0,4.5
+22,luis herrera,administración,cali,6.0,3.7
+23,sara suárez,desarrollo de software,bogotá,1.0,4.9
+24,esteban pardo,diseño gráfico,medellín,4.0,3.4
+25,carolina aguilar,administración,cali,3.0,4.0
+26,ricardo blanco,desarrollo de software,bogotá,5.0,3.8
+27,mariana vega,diseño gráfico,medellín,2.0,4.2
+28,julián ríos,administración,cali,6.0,3.6
+29,luciana molina,desarrollo de software,bogotá,1.0,4.7
+30,andrés soto,diseño gráfico,medellín,4.0,3.1
+31,victoria cárdenas,administración,cali,3.0,4.3
+32,nicolás fuentes,desarrollo de software,bogotá,5.0,3.9
+33,gabriela mora,diseño gráfico,medellín,2.0,4.6
+34,emilio peña,administración,cali,6.0,3.5
+35,renata delgado,desarrollo de software,bogotá,1.0,4.8
+36,sergio ibáñez,diseño gráfico,medellín,4.0,3.2
+37,ximena cabrera,administración,cali,3.0,4.1
+38,pablo espinoza,desarrollo de software,bogotá,5.0,3.7
+39,alejandra navarro,diseño gráfico,medellín,2.0,4.4
+40,fernando paredes,administración,cali,6.0,3.8
+41,melissa zamora,desarrollo de software,bogotá,1.0,4.5
+42,gustavo salinas,diseño gráfico,medellín,4.0,3.3
+43,patricia vera,administración,cali,3.0,4.2
+44,eduardo pizarro,desarrollo de software,bogotá,5.0,3.6
+45,claudia montes,diseño gráfico,medellín,2.0,4.3
+46,roberto guerrero,administración,cali,6.0,3.9
+47,adriana lozano,desarrollo de software,bogotá,1.0,4.7
+48,héctor vargas,diseño gráfico,medellín,4.0,3.4
+49,mónica ríos,administración,cali,3.0,4.0
+50,javier mora,desarrollo de software,bogotá,5.0,3.8
+51,laura garcía,desarrollo de software,medellín,3.0,4.2
+52,andrés pérez,diseño gráfico,bogotá,5.0,3.8
+53,valentina torres,,cali,2.0,4.5
+54,carlos ramírez,administración,,6.0,3.1
+55,maría lópez,desarrollo de software,bogotá,,4.8
+56,juan martínez,diseño gráfico,medellín,4.0,
+58,diego gómez,desarrollo de software,,5.0,3.7
+59,isabella díaz,,medellín,2.0,4.3
+60,santiago morales,administración,cali,6.0,
+61,camila ruiz,desarrollo de software,bogotá,1.0,4.6
+62,mateo vargas,diseño gráfico,medellín,,3.2
+63,daniela castro,administración,cali,3.0,4.1
+64,sebastián ortiz,desarrollo de software,bogotá,5.0,3.6
+65,valeria ramos,diseño gráfico,,2.0,4.4
+66,alejandro cruz,administración,cali,6.0,3.8
+67,natalia reyes,desarrollo de software,bogotá,1.0,4.7
+68,felipe mendoza,,medellín,4.0,3.3
+69,paula jiménez,administración,cali,3.0,4.2
+70,tomás guerrero,desarrollo de software,bogotá,5.0,3.5
+71,ana medina,diseño gráfico,medellín,2.0,4.5
+72,luis herrera,administración,cali,,3.7
+73,sara suárez,desarrollo de software,bogotá,1.0,4.9
+74,esteban pardo,diseño gráfico,medellín,4.0,3.4
+75,carolina aguilar,,cali,3.0,4.0
+76,ricardo blanco,desarrollo de software,bogotá,5.0,3.8
+77,mariana vega,diseño gráfico,medellín,2.0,4.2
+78,julián ríos,administración,cali,6.0,3.6
+79,luciana molina,desarrollo de software,,1.0,4.7
+80,andrés soto,diseño gráfico,medellín,4.0,3.1
+81,victoria cárdenas,administración,cali,3.0,4.3
+82,nicolás fuentes,desarrollo de software,bogotá,,3.9
+83,gabriela mora,diseño gráfico,medellín,2.0,4.6
+84,emilio peña,administración,cali,6.0,3.5
+85,renata delgado,desarrollo de software,bogotá,1.0,4.8
+86,sergio ibáñez,diseño gráfico,,4.0,3.2
+87,ximena cabrera,administración,cali,3.0,4.1
+88,pablo espinoza,desarrollo de software,bogotá,5.0,3.7
+89,alejandra navarro,diseño gráfico,medellín,2.0,4.4
+90,fernando paredes,administración,,6.0,3.8
+91,melissa zamora,desarrollo de software,bogotá,1.0,4.5
+92,gustavo salinas,diseño gráfico,medellín,4.0,3.3
+93,patricia vera,administración,cali,3.0,4.2
+94,eduardo pizarro,desarrollo de software,bogotá,5.0,3.6
+95,claudia montes,diseño gráfico,medellín,2.0,4.3
+96,roberto guerrero,administración,,6.0,3.9
+97,adriana lozano,desarrollo de software,bogotá,1.0,4.7
+98,héctor vargas,diseño gráfico,medellín,4.0,3.4
+99,mónica ríos,,cali,3.0,4.0
+100,javier mora,desarrollo de software,bogotá,5.0,3.8
