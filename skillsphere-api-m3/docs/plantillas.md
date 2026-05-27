@@ -1,4 +1,4 @@
-Crear usuario:
+Crear student:
 
 {
 "firstName": "xxxx",
@@ -8,3 +8,15 @@ Crear usuario:
 "birthDate": "xxxx-xxxx-xxxx",
 "program": "xxxxxxx"
 }
+
+
+Crear Institution:
+
+{
+  "name": "xxxxxx",
+  "country": "xxxxxx",
+  "website": "xxxxxxx",
+  "type": "xxxxxxxx"
+}
+
+
