@@ -8,6 +8,7 @@ Cada vez que abras una terminal de PowerShell nueva, antes de cualquier otra cos
 
 ```powershell
 $env:JAVA_HOME = "C:\Program Files\Java\jdk-21.0.10"
+$env:JAVA_HOME = "C:\Program Files\Java\jdk-22" (en mi pc)
 
 POWERSHELL
 ##If error JAVA HOME
