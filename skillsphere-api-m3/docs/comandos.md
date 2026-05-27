@@ -9,6 +9,11 @@ Cada vez que abras una terminal de PowerShell nueva, antes de cualquier otra cos
 ```powershell
 $env:JAVA_HOME = "C:\Program Files\Java\jdk-21.0.10"
 
+POWERSHELL
+##If error JAVA HOME
+$env:JAVA_HOME
+java -version
+
 ```
 
 ### Paso 2: Encender el Servidor
