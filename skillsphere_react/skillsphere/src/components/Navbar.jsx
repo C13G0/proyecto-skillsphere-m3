@@ -16,7 +16,6 @@ function Navbar() {
         <Link to="/certificados">Certificados</Link>
         <Link to="/vacantes">Vacantes</Link>
         <Link to="/perfil">Perfil</Link>
-        <Link to="/academicos">Academicos</Link>
         <button onClick={handleCerrarSesion}>Cerrar Sesion</button>
       </div>
     </nav>

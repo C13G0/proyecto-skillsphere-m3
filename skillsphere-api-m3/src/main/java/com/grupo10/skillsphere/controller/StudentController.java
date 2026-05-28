@@ -12,6 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/students")
+@CrossOrigin(origins = "http://localhost:5173") // <-- Protegemos el acceso desde el ecosistema React
 @Tag(name = "Students", description = "API for managing students")
 public class StudentController {
 

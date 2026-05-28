@@ -18,7 +18,8 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/api/certificates")
-@Tag(name = "Certificates", description = "Endpoints para gestión de certificados") // Etiqueta para OpenAPI
+@CrossOrigin(origins = "http://localhost:5173") // <-- Habilita el acceso seguro desde React
+@Tag(name = "Certificates", description = "Endpoints para gestión de certificados")
 public class CertificateController {
 
     @Autowired

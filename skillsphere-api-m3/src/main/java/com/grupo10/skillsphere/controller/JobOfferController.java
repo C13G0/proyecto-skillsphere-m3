@@ -18,6 +18,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/api/job-offers")
+@CrossOrigin(origins = "http://localhost:5173") // <-- Habilita el acceso seguro desde React
 @Tag(name = "Job Offers", description = "Endpoints para gestión de ofertas laborales")
 public class JobOfferController {
 

@@ -12,6 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/institutions")
+@CrossOrigin(origins = "http://localhost:5173") // <-- Agregamos el permiso de acceso para el Frontend
 @Tag(name = "Institutions", description = "API for managing institutions")
 public class InstitutionController {
 
