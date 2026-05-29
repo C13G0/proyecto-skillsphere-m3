@@ -1,61 +1,115 @@
+/* Eliminamos el .certificados-page-wrapper anterior porque el nuevo componente se encarga de la base */
+
 .certificados-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 48px 32px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 .certificados-container h2 {
-  font-size: 28px;
-  color: #166534;
-  margin-bottom: 8px;
+  font-size: 32px;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 6px 0;
+  letter-spacing: -0.03em;
 }
 
 .certificados-subtitulo {
-  color: #94a3b8;
-  margin-bottom: 32px;
+  color: #94a3b8; /* Cambiado a Slate 400 para resaltar mejor contra las ondas difusas */
+  margin: 0 0 36px 0;
   font-size: 15px;
+  font-weight: 500;
 }
 
 .certificados-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 24px;
 }
 
+.no-data-card {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 48px;
+  background: rgba(15, 23, 42, 0.25);
+  border: 1px dashed rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  color: #64748b;
+  font-size: 14px;
+  backdrop-filter: blur(8px);
+}
+
+/* Formulario Glassmorphism integrado */
 .certificado-form {
   display: flex;
-  gap: 12px;
-  margin-bottom: 32px;
+  gap: 14px;
+  margin-bottom: 40px;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .certificado-form input {
   flex: 1;
-  min-width: 180px;
-  padding: 10px 14px;
-  border: 1px solid #bbf7d0;
-  border-radius: 8px;
+  min-width: 220px;
+  padding: 12px 16px;
+  background-color: rgba(15, 23, 42, 0.4); /* Traslúcido para integrarse al fondo fluido */
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  color: #ffffff;
   font-size: 14px;
   outline: none;
-  transition: border 0.2s;
+  backdrop-filter: blur(10px);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  box-sizing: border-box;
+}
+
+.certificado-form input:hover {
+  border-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(15, 23, 42, 0.6);
 }
 
 .certificado-form input:focus {
-  border-color: #16a34a;
+  border-color: #10b981;
+  background-color: #0f172a;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.12);
 }
 
 .certificado-form button {
-  padding: 10px 20px;
-  background-color: #16a34a;
-  color: white;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: #ffffff;
   border: none;
-  border-radius: 8px;
+  border-radius: 12px;
   font-size: 14px;
+  font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.15);
 }
 
 .certificado-form button:hover {
-  background-color: #166534;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.25);
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
 }
 
+.certificado-form button:active {
+  transform: translateY(1px);
+}
+
+.spinner-tech {
+  width: 28px;
+  height: 28px;
+  border: 3px solid rgba(16, 185, 129, 0.1);
+  border-top-color: #10b981;
+  border-radius: 50%;
+  animation: spinTech 0.8s linear infinite;
+}
+
+@keyframes spinTech {
+  to { transform: rotate(360deg); }
+}

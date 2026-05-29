@@ -1,19 +1,18 @@
 import { useState } from 'react'
 import { useApi } from '../hooks/useApi'
 import CertificadoCard from '../components/CertificadoCard'
+import { OrganicGradientBackground } from '../components/OrganicGradientBackground' // Importamos el fondo
 import './Certificados.css'
 
 function Certificados() {
-    // Consumimos nuestro Custom Hook apuntando al endpoint de Java
     const { data: certificados, loading, error, postData, deleteData } = useApi('/certificates')
 
-    // Formulario alineado estrictamente con el CertificateDTO de Spring Boot
     const [formulario, setFormulario] = useState({
         name: '',
         description: '',
         year: '',
-        student_id: 1,       // ID de prueba por defecto (Andres)
-        institution_id: 1    // ID de prueba por defecto (SENA)
+        student_id: 1,       
+        institution_id: 1    
     })
 
     const handleChange = (e) => {
@@ -27,7 +26,6 @@ function Certificados() {
             return
         }
 
-        // Convertimos el año a número entero antes de mandarlo al backend
         const payload = {
             ...formulario,
             year: parseInt(formulario.year, 10)
@@ -35,71 +33,87 @@ function Certificados() {
 
         const exito = await postData(payload)
         if (exito) {
-            // Limpiamos solo los campos de texto si todo sale bien
             setFormulario({ ...formulario, name: '', description: '', year: '' })
         }
     }
 
     return (
-        <div className="certificados-container">
-            <h2>Mis Certificados</h2>
-            <p className="certificados-subtitulo">Logros y certificaciones obtenidos desde la API real</p>
+        /* Envolvemos toda la interfaz con el fondo dinámico de Shaders */
+        <OrganicGradientBackground>
+            <div className="certificados-container">
+                <h2>Mis Certificados</h2>
+                <p className="certificados-subtitulo">Logros y certificaciones obtenidos desde la API real</p>
 
-            {/* Renderizado Condicional: Alerta de Error amigable si falla el Backend */}
-            {error && (
-                <div style={{ padding: '12px', backgroundColor: '#fee2e2', color: '#991b1b', borderRadius: '6px', marginBottom: '16px' }}>
-                    ⚠️ <strong>Hubo un problema:</strong> {error}
-                </div>
-            )}
+                {error && (
+                    <div style={{ 
+                        padding: '14px 18px', 
+                        backgroundColor: 'rgba(239, 68, 68, 0.1)', 
+                        color: '#f87171', 
+                        borderRadius: '12px', 
+                        marginBottom: '24px',
+                        border: '1px solid rgba(239, 68, 68, 0.2)',
+                        fontSize: '14px',
+                        display: 'flex',
+                        gap: '8px'
+                    }}>
+                        ⚠️ <strong>Hubo un problema:</strong> {error}
+                    </div>
+                )}
 
-            <form className="certificado-form" onSubmit={handleSubmit}>
-                <input
-                    type="text"
-                    name="name"
-                    placeholder="Nombre del certificado (ej. React Backend)"
-                    value={formulario.name}
-                    onChange={handleChange}
-                />
-                <input
-                    type="text"
-                    name="description"
-                    placeholder="Descripción o competencia obtenida"
-                    value={formulario.description}
-                    onChange={handleChange}
-                />
-                <input
-                    type="number"
-                    name="year"
-                    placeholder="Año de finalización (ej. 2026)"
-                    value={formulario.year}
-                    onChange={handleChange}
-                />
-                <button type="submit">Agregar Certificado</button>
-            </form>
+                <form className="certificado-form" onSubmit={handleSubmit}>
+                    <input
+                        type="text"
+                        name="name"
+                        placeholder="Nombre del certificado (ej. React Backend)"
+                        value={formulario.name}
+                        onChange={handleChange}
+                    />
+                    <input
+                        type="text"
+                        name="description"
+                        placeholder="Descripción o competencia obtenida"
+                        value={formulario.description}
+                        onChange={handleChange}
+                    />
+                    <input
+                        type="number"
+                        name="year"
+                        placeholder="Año (ej. 2026)"
+                        value={formulario.year}
+                        onChange={handleChange}
+                    />
+                    <button type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: '6px' }}><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        Agregar Certificado
+                    </button>
+                </form>
 
-            {/* Renderizado Condicional: Indicador de Carga (Spinner / Mensaje) */}
-            {loading ? (
-                <div style={{ textAlign: 'center', margin: '32px 0', fontSize: '1.2rem', color: '#4f46e5' }}>
-                    <div className="spinner"></div> Cargando certificaciones reales...
-                </div>
-            ) : (
-                <div className="certificados-grid">
-                    {certificados.length === 0 ? (
-                        <p>No hay certificados registrados aún en la base de datos.</p>
-                    ) : (
-                        certificados.map((cert) => (
-                            <CertificadoCard
-                                key={cert.id}
-                                nombre={cert.name}          /* Adaptado a lo que devuelve el backend */
-                                escuela={cert.description}   /* Usamos description temporalmente en la card */
-                                fecha={String(cert.year)}    /* Convertido a string para la interfaz */
-                                onEliminar={() => deleteData(cert.id)}
-                            />
-                        ))
-                    )}
-                </div>
-            )}
-        </div>
+                {loading ? (
+                    <div style={{ textAlign: 'center', margin: '64px 0', fontSize: '15px', color: '#10b981', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px' }}>
+                        <div className="spinner-tech"></div> 
+                        <span>Sincronizando con el servidor de SkillSphere...</span>
+                    </div>
+                ) : (
+                    <div className="certificados-grid">
+                        {certificados.length === 0 ? (
+                            <div className="no-data-card">
+                                <p>No hay certificados registrados aún en tu perfil de la base de datos.</p>
+                            </div>
+                        ) : (
+                            certificados.map((cert) => (
+                                <CertificadoCard
+                                    key={cert.id}
+                                    nombre={cert.name}          
+                                    escuela={cert.description}   
+                                    fecha={String(cert.year)}    
+                                    onEliminar={() => deleteData(cert.id)}
+                                />
+                            ))
+                        )}
+                    </div>
+                )}
+            </div>
+        </OrganicGradientBackground>
     )
 }
 

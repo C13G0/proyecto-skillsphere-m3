@@ -1,9 +1,110 @@
+/* Contenedor principal del Footer */
 .footer {
-  background-color: #166534;
-  padding: 24px 32px;
-  text-align: center;
-  border-top: 2px solid #4ade80;
-  color: #f0fdf4;
+  background-color: #0f172a; /* Slate 900 idéntico al Navbar */
+  padding: 24px 40px;
+  border-top: 1px solid rgba(51, 65, 85, 0.4); /* Línea divisoria sutil */
+  margin-top: 64px; /* Espacio generoso con el contenido superior */
+}
+
+/* Contenedor interno alineado con los márgenes de la app */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+/* Sección izquierda: Marca y Copyright */
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #94a3b8; /* Slate 400 */
+  font-weight: 700;
   font-size: 14px;
-  margin-top: 48px;
+  letter-spacing: -0.01em;
+}
+
+.footer-brand-icon {
+  color: #10b981; /* Detalle esmeralda de la marca */
+}
+
+.footer-copyright {
+  color: #64748b; /* Slate 500 para texto secundario */
+  font-size: 13px;
+  margin: 0;
+  border-left: 1px solid rgba(51, 65, 85, 0.6);
+  padding-left: 16px;
+}
+
+/* Sección derecha: Micro-badge de estado del sistema */
+.status-badge {
+  background-color: rgba(16, 185, 129, 0.06);
+  border: 1px solid rgba(16, 185, 129, 0.15);
+  padding: 6px 12px;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.status-dot {
+  width: 6px;
+  height: 6px;
+  background-color: #10b981;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #10b981;
+  animation: pulsoEstado 2s infinite;
+}
+
+.status-text {
+  color: #10b981;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+/* Animación de pulso para el punto de estado */
+@keyframes pulsoEstado {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.5);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 5px rgba(16, 185, 129, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
+}
+
+/* Adaptabilidad para pantallas móviles pequeñas */
+@media (max-width: 640px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .footer-left {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .footer-copyright {
+    border-left: none;
+    padding-left: 0;
+  }
 }

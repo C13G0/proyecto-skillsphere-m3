@@ -1,77 +1,203 @@
+/* Contenedor Principal: Se integra al fondo oscuro general de la app */
 .perfil-container {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f0fdf4;
+  min-height: 80vh; /* Ajustado para convivir cómodamente entre Navbar y Footer */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #090d16; /* Base profunda Dark Tech */
+  position: relative;
+  overflow: hidden;
+  padding: 40px 20px;
+  box-sizing: border-box;
 }
 
+/* Reflejo de luz superior */
+.perfil-glow-top {
+  position: absolute;
+  width: 500px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.05) 0%, rgba(0,0,0,0) 80%);
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+/* Tarjeta de Perfil Esmerilada */
 .perfil-card {
-    background-color: #ffffff;
-    border: 1px solid #bbf7d0;
-    border-radius: 16px;
-    padding: 40px;
-    width: 100%;
-    max-width: 450px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    text-align: center;
+  background-color: rgba(15, 23, 42, 0.5);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 40px;
+  width: 100%;
+  max-width: 440px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  box-sizing: border-box;
 }
 
-.perfil-avatar {
-    font-size: 64px;
-    margin-bottom: 16px;
+/* Bloque Superior: Avatar y Títulos */
+.perfil-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+/* Contenedor de Avatar con Anillo de Carga/Estado */
+.avatar-wrapper {
+  position: relative;
+  width: 84px;
+  height: 84px;
+  background: rgba(15, 23, 42, 0.8);
+  border: 2px solid rgba(16, 185, 129, 0.25);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  color: #10b981;
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.1);
+}
+
+.avatar-svg {
+  width: 48px;
+  height: 48px;
+}
+
+/* Punto de conexión en vivo */
+.online-indicator {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  width: 12px;
+  height: 12px;
+  background-color: #10b981;
+  border: 2px solid #0f172a;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #10b981;
 }
 
 .perfil-card h2 {
-    color: #166534;
-    font-size: 24px;
-    margin-bottom: 4px;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin: 0 0 6px 0;
 }
 
 .perfil-programa {
-    color: #16a34a;
-    font-size: 14px;
-    margin-bottom: 24px;
+  color: #10b981; /* Verde insignia */
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  background-color: rgba(16, 185, 129, 0.06);
+  padding: 4px 12px;
+  border-radius: 9999px;
+  border: 1px solid rgba(16, 185, 129, 0.12);
 }
 
+/* Listado de Filas de Información */
 .perfil-info {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 32px;
 }
 
 .perfil-item {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 16px;
-    background-color: #f0fdf4;
-    border-radius: 8px;
-    border: 1px solid #bbf7d0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px;
+  background-color: rgba(15, 23, 42, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 14px;
+  transition: all 0.2s ease;
+}
+
+.perfil-item:hover {
+  background-color: rgba(15, 23, 42, 0.75);
+  border-color: rgba(255, 255, 255, 0.08);
+  transform: translateX(2px);
+}
+
+/* Alineación Izquierda (Icono + Label) */
+.item-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.item-icon {
+  color: #475569; /* Slate 600 */
+}
+
+.perfil-item:hover .item-icon {
+  color: #10b981; /* Ilumina al pasar el mouse */
 }
 
 .perfil-label {
-    color: #94a3b8;
-    font-size: 14px;
+  color: #64748b; /* Slate 500 */
+  font-size: 14px;
+  font-weight: 500;
 }
 
+/* Valores de la derecha */
 .perfil-valor {
-    color: #166534;
-    font-size: 14px;
-    font-weight: 600;
+  color: #e2e8f0; /* Blanco suavizado */
+  font-size: 14px;
+  font-weight: 600;
 }
 
-.perfil-card button {
-    padding: 10px 24px;
-    background-color: #16a34a;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.2s;
+/* Variaciones estéticas para resaltar datos clave */
+.badge-semestre {
+  color: #3b82f6; /* Azul eléctrico para destacar progreso académino */
+  background-color: rgba(59, 130, 246, 0.1);
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 13px;
 }
 
-.perfil-card button:hover {
-    background-color: #166534;
+.promedio-destacado {
+  color: #f59e0b; /* Ámbar/Oro para destacar excelente nota */
+}
+
+/* Botón de Navegación con Flecha Dinámica */
+.btn-perfil-action {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.15);
+}
+
+.btn-perfil-action:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.25);
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+}
+
+.btn-perfil-action:hover svg {
+  transform: translateX(3px); /* Pequeña animación reactiva en la flecha */
+}
+
+.btn-perfil-action svg {
+  transition: transform 0.2s ease;
+}
+
+.btn-perfil-action:active {
+  transform: translateY(1px);
 }

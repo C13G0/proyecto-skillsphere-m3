@@ -1,45 +1,99 @@
+/* Navbar: Contenedor flotante traslúcido (Glassmorphism de alta fidelidad) */
 .navbar {
-  background-color: #166534;
-  padding: 16px 32px;
+  background-color: rgba(15, 23, 42, 0.9); /* Base Slate 900 oscura */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 14px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid #4ade80;
+  border-bottom: 1px solid rgba(51, 65, 85, 0.5); /* Separador sutil */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+/* Identidad de Marca */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  color: #10b981; /* Verde esmeralda insignia */
+  animation: sutilFloat 3s ease-in-out infinite;
 }
 
 .navbar h2 {
-  color: #4ade80;
-  font-size: 24px;
-  letter-spacing: 2px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin: 0;
 }
 
+/* Grupo de Enlaces */
 .navbar-links {
   display: flex;
-  gap: 24px;
+  align-items: center;
+  gap: 8px;
 }
 
-.navbar-links a {
-  color: #f0fdf4;
+/* Ítems de Navegación Base */
+.nav-item {
+  color: #94a3b8; /* Gris Slate mitigado */
   text-decoration: none;
   font-size: 14px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid transparent;
 }
 
-.navbar-links a:hover {
-  color: #4ade80;
+/* Hover sobre pestañas inactivas */
+.nav-item:hover {
+  color: #f8fafc;
+  background-color: rgba(51, 65, 85, 0.3);
 }
 
-.navbar-links button {
+/* Estado Activo Inyectado por NavLink de forma Automática */
+.nav-item.active {
+  color: #10b981; /* Resalta en esmeralda */
+  background-color: rgba(16, 185, 129, 0.08);
+  border-color: rgba(16, 185, 129, 0.2);
+}
+
+/* Botón de Salida con Advertencia Sutil al Hover */
+.btn-logout {
   background-color: transparent;
-  color: #f0fdf4;
-  border: 1px solid #4ade80;
-  border-radius: 6px;
-  padding: 6px 14px;
+  color: #94a3b8;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 8px 14px;
   font-size: 14px;
+  font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+  margin-left: 12px;
 }
 
-.navbar-links button:hover {
-  background-color: #4ade80;
-  color: #166534;
+.btn-logout:hover {
+  background-color: rgba(225, 29, 72, 0.08); /* Fondo carmín sutil */
+  color: #f43f5e;
+  border-color: rgba(244, 63, 94, 0.15);
+}
+
+/* Animación de balanceo para el logotipo */
+@keyframes sutilFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-2px); }
 }

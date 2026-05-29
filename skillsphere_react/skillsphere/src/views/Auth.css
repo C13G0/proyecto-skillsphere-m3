@@ -1,0 +1,180 @@
+/* Contenedor Principal: Fondo tecnológico profundo */
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #090d16; /* Base ultra oscura */
+  position: relative;
+  overflow: hidden;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Luces ambientales difuminadas de fondo (Aura Neon) */
+.auth-glow-1 {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.08) 0%, rgba(0,0,0,0) 70%);
+  top: -100px;
+  left: -100px;
+  z-index: 1;
+}
+
+.auth-glow-2 {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.06) 0%, rgba(0,0,0,0) 70%);
+  bottom: -150px;
+  right: -150px;
+  z-index: 1;
+}
+
+/* Tarjeta con Efecto Esmerilado (Glassmorphism de alta fidelidad) */
+.auth-card {
+  background-color: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 24px;
+  padding: 48px 40px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+/* Identidad Visual dentro de la Tarjeta */
+.auth-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+
+.auth-icon-logo {
+  color: #10b981; /* Verde esmeralda insignia */
+}
+
+.auth-card h1 {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin: 0;
+}
+
+.auth-subtitulo {
+  color: #64748b; /* Slate 500 */
+  font-size: 14px;
+  margin: 0 0 32px 0;
+  font-weight: 500;
+}
+
+/* Formulario e Inputs de Precisión */
+.auth-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+/* Contenedor del Input con Icono integrado */
+.input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.input-icon {
+  position: absolute;
+  left: 16px;
+  color: #475569; /* Slate 600 */
+  transition: color 0.2s ease;
+  pointer-events: none;
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 14px 16px 14px 46px; /* Desplazado a la izquierda para el icono */
+  background-color: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  color: #ffffff;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  box-sizing: border-box;
+}
+
+/* Estados Interactivos del Input */
+.auth-card input:hover {
+  border-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(15, 23, 42, 0.8);
+}
+
+.auth-card input:focus {
+  border-color: #10b981;
+  background-color: #0f172a;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.12);
+}
+
+/* Ilumina el icono interno al enfocar el input */
+.input-group:focus-within .input-icon {
+  color: #10b981;
+}
+
+/* Botón Premium con Degradado Enérgico */
+.btn-auth-submit {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 8px;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
+  box-sizing: border-box;
+}
+
+.btn-auth-submit:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.3);
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+}
+
+.btn-auth-submit:active {
+  transform: translateY(1px);
+}
+
+/* Enlace inferior de alternancia de pantalla */
+.auth-link {
+  margin-top: 28px;
+  font-size: 13.5px;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.auth-link span {
+  color: #10b981;
+  cursor: pointer;
+  font-weight: 600;
+  transition: color 0.2s ease;
+  margin-left: 4px;
+}
+
+.auth-link span:hover {
+  color: #34d399;
+  text-decoration: none;
+}
