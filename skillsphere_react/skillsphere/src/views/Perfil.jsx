@@ -1,9 +1,25 @@
+import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import './Perfil.css'
 
 function Perfil() {
     const navigate = useNavigate()
-    const usuario = localStorage.getItem('usuario') || 'Estudiante'
+    const [estudiante, setEstudiante] = useState(null)
+
+    useEffect(() => {
+        // Leemos el objeto completo de la sesión
+        const sesion = localStorage.getItem('estudiante')
+        
+        if (!sesion) {
+            // Si no está logueado, lo mandamos al login de inmediato
+            navigate('/login')
+        } else {
+            setEstudiante(JSON.parse(sesion))
+        }
+    }, [navigate])
+
+    // Mientras verifica la sesión o redirige, no renderizamos nada para evitar parpadeos
+    if (!estudiante) return null
 
     return (
         <div className="perfil-container">
@@ -19,46 +35,46 @@ function Perfil() {
                         </svg>
                         <span className="online-indicator"></span>
                     </div>
-                    <h2>{usuario}</h2>
-                    <p className="perfil-programa">Desarrollador de Software</p>
+                    <h2>{estudiante.firstName} {estudiante.lastName}</h2>
+                    <p className="perfil-programa">{estudiante.program || 'Programa no asignado'}</p>
                 </div>
 
                 {/* Lista de Métricas y Datos del Estudiante */}
                 <div className="perfil-info">
-                    {/* Ítem: Usuario */}
+                    {/* Ítem: ID de la Base de Datos */}
                     <div className="perfil-item">
                         <div className="item-left">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="item-icon"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-                            <span className="perfil-label">ID Usuario</span>
+                            <span className="perfil-label">ID Estudiante</span>
                         </div>
-                        <span className="perfil-valor">{usuario.toLowerCase().replace(/\s+/g, '')}</span>
+                        <span className="perfil-valor">#{estudiante.id}</span>
                     </div>
 
-                    {/* Ítem: Ciudad */}
+                    {/* Ítem: Correo Electrónico */}
                     <div className="perfil-item">
                         <div className="item-left">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="item-icon"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                            <span className="perfil-label">Ubicación</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="item-icon"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            <span className="perfil-label">Correo</span>
                         </div>
-                        <span className="perfil-valor">Medellín</span>
+                        <span className="perfil-valor" style={{ fontSize: '13px' }}>{estudiante.email}</span>
                     </div>
 
-                    {/* Ítem: Semestre */}
+                    {/* Ítem: Celular */}
                     <div className="perfil-item">
                         <div className="item-left">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="item-icon"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v5"/></svg>
-                            <span className="perfil-label">Nivel / Semestre</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="item-icon"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            <span className="perfil-label">Celular / PW</span>
                         </div>
-                        <span className="perfil-valor badge-semestre">Semestre 3</span>
+                        <span className="perfil-valor badge-semestre">{estudiante.phone}</span>
                     </div>
 
-                    {/* Ítem: Promedio */}
+                    {/* Ítem: Estado en Plataforma */}
                     <div className="perfil-item">
                         <div className="item-left">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="item-icon"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                            <span className="perfil-label">Score Promedio</span>
+                            <span className="perfil-label">Estado</span>
                         </div>
-                        <span className="perfil-valor promedio-destacado">4.2 / 5.0</span>
+                        <span className="perfil-valor promedio-destacado">Sincronizado</span>
                     </div>
                 </div>
 

@@ -8,82 +8,16 @@
 .vacantes-container h2 {
   font-size: 32px;
   font-weight: 800;
-  color: #ffffff; /* Ajustado a blanco para resaltar sobre el fondo fluido */
+  color: #ffffff;
   margin: 0 0 6px 0;
   letter-spacing: -0.03em;
 }
 
 .vacantes-subtitulo {
-  color: #94a3b8; /* Slate 400 */
+  color: #94a3b8;
   margin: 0 0 36px 0;
   font-size: 15px;
   font-weight: 500;
-}
-
-/* Formulario con Glassmorphism translúcido */
-.formulario {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  margin-bottom: 40px;
-  background-color: rgba(15, 23, 42, 0.25); /* Deja ver los Shaders pasando de fondo */
-  padding: 24px;
-  border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  backdrop-filter: blur(12px);
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.formulario input {
-  padding: 12px 16px;
-  background-color: rgba(15, 23, 42, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: 12px;
-  font-size: 14px;
-  color: #ffffff;
-  outline: none;
-  flex: 1;
-  min-width: 220px;
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  box-sizing: border-box;
-}
-
-.formulario input:hover {
-  border-color: rgba(255, 255, 255, 0.15);
-  background-color: rgba(15, 23, 42, 0.6);
-}
-
-.formulario input:focus {
-  border-color: #10b981; /* Verde esmeralda premium al enfocar */
-  background-color: #0f172a;
-  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.12);
-}
-
-.formulario button {
-  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-  color: white;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 12px;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s ease;
-  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.15);
-}
-
-.formulario button:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.25);
-  background: linear-gradient(135deg, #059669 0%, #047857 100%);
-}
-
-.formulario button:active {
-  transform: translateY(1px);
 }
 
 .vacantes-grid {
@@ -104,7 +38,6 @@
   backdrop-filter: blur(8px);
 }
 
-/* Spinner de carga de alta tecnología */
 .spinner {
   width: 28px;
   height: 28px;
