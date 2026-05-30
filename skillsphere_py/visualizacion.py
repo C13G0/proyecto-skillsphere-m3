@@ -9,7 +9,7 @@ import seaborn as sns
 BASE_URL = "http://localhost:8080/api"
 
 # Rutas de salida para React (Opción A)
-REACT_PUBLIC_DIR = os.path.join("..", "skillsphere_react", "public")
+REACT_PUBLIC_DIR = os.path.join("..", "skillsphere_react", "skillsphere", "public")
 PATH_GRAFICO_1 = os.path.join(REACT_PUBLIC_DIR, "grafico_programas.png") # Ahora será una torta
 PATH_GRAFICO_2 = os.path.join(REACT_PUBLIC_DIR, "grafico_instituciones.png") # Seguirán siendo barras horiz.
 
