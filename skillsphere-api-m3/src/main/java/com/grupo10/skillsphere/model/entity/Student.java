@@ -15,6 +15,8 @@ public class Student {
     private String firstName;
     private String lastName;
     private String email;
+
+    @Column(nullable = false)
     private String phone;
     private String program;
 

@@ -1,8 +1,4 @@
-Aquí tienes el diseño técnico y profesional para el archivo `README.md`. Está redactado en Markdown estándar, listo para que borres el contenido del archivo actual en la raíz de tu proyecto, pegues este bloque completo y lo guardes.
 
-He configurado las rutas de Java de forma que sirvan tanto para ti en la compu del CESDE como para tus compañeros si descargan el proyecto.
-
-```markdown
 # 🚀 SkillSphere API - Backend (M3)
 
 API REST robusta desarrollada con **Spring Boot 3** para la plataforma **SkillSphere**, diseñada para conectar de forma eficiente a estudiantes con ofertas de empleo, certificados e instituciones asociadas. 
@@ -85,14 +81,160 @@ git checkout -b feature/nombre-del-cambio
 
 ```
 
+---```python
+backend_readme_content = """# ⚙️ SkillSphere — Backend REST API
+
+Este es el núcleo del ecosistema **SkillSphere**, una API REST robusta desarrollada en **Java 17** con **Spring Boot 3.x** y **Spring Data JPA**. Se encarga de centralizar las reglas de negocio, gestionar la persistencia en una base de datos relacional **PostgreSQL** y asegurar la integridad de los datos para la administración de estudiantes, certificados académicos, instituciones y ofertas laborales de Inteligencia Artificial.
+
 ---
 
-### 💡 ¿Qué sigue ahora?
-1. Abre tu archivo `README.md` en VS Code.
-2. Reemplaza todo el texto viejo por este de arriba.
-3. Guarda los cambios (`Ctrl + S`).
-4. Haz el flujo de Git que te recomendé en el turno anterior para subir este manual a GitHub (`git add .`, `git commit -m "docs: actualizar readme con instrucciones de arranque y swagger"`, `git push origin main`).
+## 🚀 Tecnologías Core
+* **Lenguaje:** Java 17
+* **Framework Principal:** Spring Boot 3.x (Spring Web, Spring Data JPA)
+* **Gestor de Dependencias:** Maven
+* **Motor de Base de Datos:** PostgreSQL 15+
+* **Mapeo Objeto-Relacional (ORM):** Hibernate 6.x
 
-¡Con esto el proyecto queda blindado a nivel documental y técnico! Quedo listo para cuando quieras que empecemos a tirar código para los métodos POST o a revisar los controladores.
+---
+
+## 📂 Arquitectura del Proyecto (Capas)
+
+El backend sigue un patrón de diseño arquitectónico desacoplado por capas limpias, aislando responsabilidades:
+
 
 ```
+
+```text
+README independiente de backend creado.
+
+```text
+📂 src/main/java/com/grupo10/skillsphere/
+├── 📂 controller   --> Exposición de Endpoints REST (@RestController) y manejo de peticiones HTTP.
+├── 📂 service      --> Lógica de negocio core, validaciones y orquestación transaccional.
+├── 📂 repository   --> Abstracción de persistencia extendiendo de JpaRepository (Spring Data).
+├── 📂 model        --> Entidades nativas mapeadas a tablas físicas de PostgreSQL mediante anotaciones JPA.
+└── 📂 dto          --> Data Transfer Objects para el intercambio seguro y limpio de payloads con el Frontend.
+
+```
+
+---
+
+## ⚙️ Configuración del Servidor y Base de Datos
+
+Antes de compilar la aplicación, debes estructurar los parámetros de conexión locales en tu archivo `src/main/resources/application.properties`:
+
+```properties
+# Puerto del Servidor Backend
+server.port=8080
+
+# Conexión a la Base de Datos PostgreSQL
+spring.datasource.url=jdbc:postgresql://localhost:5432/skillsphere_db
+spring.datasource.username=tu_usuario_postgres
+spring.datasource.password=tu_contrasena_postgres
+spring.datasource.driver-class-name=org.postgresql.Driver
+
+# Configuración Estratégica de JPA / Hibernate
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect
+
+```
+
+---
+
+## 🔀 Contratos y Endpoints de la API REST
+
+Todas las transferencias de datos se realizan en formato **JSON** bajo la cabecera `Content-Type: application/json`.
+
+### 1. Módulo de Estudiantes (`/api/students`)
+
+* **`POST /api/students`** (o ruta de registro auth): Registra un nuevo perfil de estudiante.
+```json
+{
+  "firstName": "Andres",
+  "lastName": "Rios Arbelaez",
+  "email": "andres@skillsphere.com",
+  "phone": "+573001234567",
+  "program": "Desarrollador de Software"
+}
+
+```
+
+
+* **`GET /api/students/{id}`**: Extrae la información detallada de un perfil real guardado.
+
+### 2. Módulo de Instituciones (`/api/institutions`)
+
+* **`POST /api/institutions`**: Crea entidades académicas que actúan como emisoras válidas de certificados.
+```json
+{
+  "name": "SkillSphere Academy",
+  "country": "Colombia",
+  "type": "Virtual",
+  "website": "[https://skillsphere.com](https://skillsphere.com)"
+}
+
+```
+
+
+
+### 3. Módulo de Certificados (`/api/certificates`)
+
+* **`POST /api/certificates`**: Guarda un logro académico en la base de datos.
+> ⚠️ **Restricción Crítica:** Arrojará `DataIntegrityViolationException` (Error de Llave Foránea) si `student_id` o `institution_id` no existen previamente en sus respectivas tablas.
+
+
+```json
+{
+  "name": "Backend Developer Especializado",
+  "description": "Especialización completa en APIs REST con Spring Boot y JPA",
+  "year": 2026,
+  "student_id": 1,
+  "institution_id": 1
+}
+
+```
+
+
+
+### 4. Módulo de Vacantes / Ofertas de IA (`/api/vacancies`)
+
+* **`GET /api/vacancies`**: Retorna el pool completo de ofertas de empleo dinámicas.
+* **`POST /api/vacancies`**: Inyecta nuevas ofertas exóticas al mercado laboral.
+```json
+{
+  "title": "AI Red Teamer / Hacker Ético de LLMs",
+  "description": "Ataque creativo a modelos mediante inyección de prompts y jailbreaks.",
+  "requirements": "Experiencia con LLM Guardrails y scripting avanzado en Python.",
+  "company": "CyberShield AI Labs",
+  "salary": 8500000
+}
+
+```
+
+
+
+---
+
+## 🛠️ Ciclo de Ejecución Local
+
+Para levantar el backend de manera limpia en tu entorno local, ejecuta los siguientes comandos en la raíz de la carpeta del backend:
+
+1. **Compilar y construir el proyecto empaquetando dependencias:**
+```bash
+mvn clean install
+
+```
+
+
+2. **Iniciar la aplicación Spring Boot:**
+```bash
+mvn spring-boot:run
+
+```
+
+
+
+El servidor quedará escuchando peticiones activamente en: `http://localhost:8080`
+

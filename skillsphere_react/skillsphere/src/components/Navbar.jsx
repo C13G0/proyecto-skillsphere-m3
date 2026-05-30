@@ -14,7 +14,14 @@ function Navbar() {
       {/* Contenedor del Logo con Icono Tech */}
       <div className="navbar-logo">
         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="logo-icon"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-        <h2>SkillSphere</h2>
+        
+        {/* Enlace secreto al panel de estadísticas camuflado */}
+        <h2 
+          onClick={() => navigate('/estadisticas')} 
+          style={{ cursor: 'default' }}
+        >
+          SkillSphere
+        </h2>
       </div>
 
       {/* Enlaces con Iconografía y Clases Dinámicas */}

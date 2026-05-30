@@ -6,6 +6,7 @@ import Vacantes from './views/Vacantes'
 import Login from './views/Login'
 import Registro from './views/Registro'
 import Perfil from './views/Perfil'
+import Estadisticas from './components/Estadisticas'
 import './App.css'
 
 function App() {
@@ -15,6 +16,11 @@ function App() {
         <Route path="/" element={<Navigate to="/login" />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Registro />} />
+        
+        {/* Vista secreta de analítica (sin Navbar ni Footer estándar) */}
+        <Route path="/estadisticas" element={<Estadisticas />} />
+
+        {/* Rutas con maquetación estándar */}
         <Route path="/certificados" element={<><Navbar /><Certificados /><Footer /></>} />
         <Route path="/vacantes" element={<><Navbar /><Vacantes /><Footer /></>} />
         <Route path="/perfil" element={<><Navbar /><Perfil /><Footer /></>} />
